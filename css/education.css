@@ -1,0 +1,43 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: rgba(66, 65, 66, 0.333);
+}
+
+ul {
+    text-align: center;
+}
+
+li {
+    padding: 5px 12px;
+    list-style: none;
+    background-color: rgb(255, 71, 71);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(2, 169, 184) !important;
+    font-size: 18px;
+}
+
+a:visited {
+    color: rgb(186, 196, 214);
+}
+
+h1 {
+    color: #b3a9ff;
+}
+
+table, th, td {
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 5px 12px;
+}

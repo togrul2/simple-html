@@ -1,0 +1,59 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: rgba(66, 65, 66, 0.333);
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.italic-text {
+    font-style: italic;
+    color: aqua;
+}
+
+p {
+    color: white;
+}
+
+li {
+    padding: 5px 12px;
+    list-style: none;
+    background-color: rgb(255, 71, 71);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(2, 169, 184) !important;
+    font-size: 18px;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+
+h1 {
+    color: #4775fc;
+}
+
+input {
+    border: 2px solid rgb(227, 27, 27);
+    border-radius: 12px;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    padding: 5px 24px;
+    transition: transform .12s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
