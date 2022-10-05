@@ -42,31 +42,51 @@ body {
     color: rgb(30, 30, 30);
 }
 
+/* .nav-list.item a:visited{
+    color: rgb(164, 177, 255);
+} */
+
 main {
     position: relative;
     top: 50px;
-    padding: 20px 50px;
 }
 
-h1 {
-    color: #4775fc;
+.hero {
+    display: flex;
+    padding: 50px 80px;
+
 }
 
-input {
-    border: 1px solid rgb(60, 60, 60);
-    border-radius: 5px;
-    padding: 2px 5px;
+.hero .profile-picture {
+    margin-right: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
-input[type=submit] {
-    font-size: 16px;
-    padding: 5px 24px;
-    transition: transform .12s;
-    background-color: rgb(58, 58, 254);
-    color: rgb(246, 246, 246);
+.hero .profile-picture:hover {
+    width: 220px;
+    height: 220px;
 }
 
-input[type=submit]:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+.hero .hero__text {
+    width: 550px;
+}
+
+.italic-text {
+    font-style: italic;
+    /* color: aqua; */
+    color: rgb(48, 48, 48);
+}
+
+.gallery__container {
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+}
+
+.gallery__container .image {
+    /* border-radius: 50%; */
+    max-width: 384px;
+    max-height: 216px;
 }
