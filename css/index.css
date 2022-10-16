@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+
 .header {
     display: flex;
     background-color: rgb(45, 30, 255);
@@ -89,7 +90,8 @@ h1 {
 
 hr {
     margin: 0 auto;
-    width: 90%;
+    width: 7    0%;
+    border: 1px dashed #000;
 }
 
 .info {
