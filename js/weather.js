@@ -5,8 +5,8 @@ const config = {
 
 const appid = "b08376140a2fb62b5b1db55a4797a065";
 const openapiUrl = "https://api.openweathermap.org/data/2.5/onecall";
-const geoapiUrl = "http://api.openweathermap.org/geo/1.0/direct";
-const geoapiReverseUrl = "http://api.openweathermap.org/geo/1.0/reverse";
+const geoapiUrl = "https://api.openweathermap.org/geo/1.0/direct";
+const geoapiReverseUrl = "https://api.openweathermap.org/geo/1.0/reverse";
 const restcountriesUrl = "https://restcountries.com/v2/alpha/";
 
 const navBtns = document.querySelectorAll(".menu__nav__btn");
