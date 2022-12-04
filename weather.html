@@ -1,0 +1,134 @@
+<!-- Web & Mobile I - Graded Assignment 2
+Weather app by Togrul Asadov -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Here I talk about python web technologies such as Django, Flask, FastAPI">
+    <meta name="author" content="togrul2">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffe7a88fea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-list item">
+                        <a href="index.html">Main</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="education.html">Education</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="contactme.html">Contact Me</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="card.html">Business Card</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="https://github.com/togrul2">Github Account</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="https://togrul2.github.io">Github Page</a>
+                    </li>
+                    <li class="nav-list item">
+                        <a class="active" href="weather.html">Weather app</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav class="media">
+                <ul class="nav-list">
+                    <li class="nav-list item">
+                        <a href="#">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="#">
+                            <i class="fa fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-list item">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="title">Weater forecasting app</h1>
+        <h4 class="subtitle">Get the actual weather for your needs</h4>
+
+        <section class="menu">
+            <nav class="menu__nav">
+                <button value="city-name" class="menu__nav__btn active">By City Name</button>
+                <button value="coordinates" class="menu__nav__btn ">By Coordinates</button>
+                <button value="curr-location" class="menu__nav__btn ">Pick my location</button>
+            </nav>
+            <div class="menu__content">
+                <div class="menu__content__bar" id="city-name">
+                    <form id="city-form" class="menu__content__bar__form">
+                        <div>
+                            <label for="city-input">City name:</label>
+                            <input class="input" type="text" id="city-input" name="city-input">
+                        </div>
+                        <input type="submit" value="Get data">
+                    </form>
+                </div>
+                <div class="menu__content__bar hidden" id="coordinates">
+                    <form id="coords-form" class="menu__content__bar__form">
+                        <div>
+                            <label for="lat">Latitude:</label>
+                            <input class="input" type="number" step="0.00000000000001" id="lat" name="lat">
+                        </div>
+                        <div>
+                            <label for="lon">Longtitude:</label>
+                            <input class="input" type="number" step="0.00000000000001" id="lon" name="lon">
+                        </div>
+                        <input type="submit" value="Get data">
+                    </form>
+                </div>
+                <div class="menu__content__bar hidden" id="curr-location">
+                    <form class="menu__content__bar__form">
+                        <h2>Get weather of your city</h2>
+                        <input type="submit" id="pick-up-location-btn" value="Get data">
+                    </form>
+                </div>
+            </div>
+            <div class="menu__results hidden" id="results-bar">
+                <ul class="menu__results__list">
+                    <li>City name: <span id="city"></span></li>
+                    <li>Country: <span id="country"></span></li>
+                    <li>Weather condition: <span id="weather-cond"></span></li>
+                    <li>Weather Description: <span id="desciption"></span></li>
+                    <li>Temprature: <span id="temprature"></span></li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Pressure: <span id="pressure"></span> hPa</li>
+                    <li>Wind speed: <span id="wind-speed"></span> m/s</li>
+                    <li>Wind degree: <span id="wind-direction"></span></li>
+                    <li>Time: <span id="time"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
